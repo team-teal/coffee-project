@@ -7,3 +7,19 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+* {
+    background-color: saddlebrown;
+}
+#coffees {
+    width: 100%;
+}
+.right-div {
+    width: 50%;
+}
+h1 {
+    font-style: italic;
+    font-family: "Al Tarikh";
+}
+#search-bar {
+    background-color: white;
+}
