@@ -23,12 +23,16 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     var userCoffeeRequest = searchBarElement.value;
+    console.log(roastSelection.value)
     coffees.forEach(function (coffee) {
         if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(userCoffeeRequest.toLowerCase())) {
                 filteredCoffees.push(coffee);
                 console.log('Here is a potential result...')
                 console.log(coffee);
-            }
+            } else if (roastSelection.value === "All" && coffee.name.toLowerCase().includes(userCoffeeRequest.toLowerCase())) {
+            filteredCoffees.push(coffee)
+            console.log(coffee)
+        }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
