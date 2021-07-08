@@ -21,7 +21,7 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6 p-0">
+        <div class="col-12 col-md-3 p-0">
             <div class="container-fluid p-0">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -38,34 +38,37 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6">
-            <form>
+        <div class="col-12 col-md-3">
+            <form class="select-roast-dropdown">
                 <label for="roast-selection"></label>
                 <select id="roast-selection">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
-                    <option>All</option>
+                    <!--                    <option>All</option>-->
         </div>
         </select>
-        <div class="col-12 col-md-6">
-            <label for="search-bar">Coffee Name</label>
-            <input id="search-bar" type="text"/>
+        <div class="col-12 col-md-3">
+            <!--            <label for="search-bar">Coffee Name</label>-->
+            <input id="search-bar" type="text" placeholder="Search Coffee"/>
             <!--       <input id="submit" type="submit" />-->
         </div>
     </div>
     </form>
     <div class="right-div">
-        <table>
-            <!--            <thead>-->
-            <!--            &lt;!&ndash;            <tr>&ndash;&gt;-->
-            <!--            &lt;!&ndash;                <th>ID</th>&ndash;&gt;-->
-            <!--            &lt;!&ndash;                <th>NAME</th>&ndash;&gt;-->
-            <!--            &lt;!&ndash;                <th>ROAST</th>&ndash;&gt;-->
-            <!--            &lt;!&ndash;            </tr>&ndash;&gt;-->
-            <!--            </thead>-->
-            <tbody id="coffees"></tbody>
-        </table>
+        <div class="col-auto">
+            <div id="coffees"></div>
+        </div>
+        <!--        <table>-->
+        <!--            &lt;!&ndash;            <thead>&ndash;&gt;-->
+        <!--            &lt;!&ndash;            &lt;!&ndash;            <tr>&ndash;&gt;&ndash;&gt;-->
+        <!--            &lt;!&ndash;            &lt;!&ndash;                <th>ID</th>&ndash;&gt;&ndash;&gt;-->
+        <!--            &lt;!&ndash;            &lt;!&ndash;                <th>NAME</th>&ndash;&gt;&ndash;&gt;-->
+        <!--            &lt;!&ndash;            &lt;!&ndash;                <th>ROAST</th>&ndash;&gt;&ndash;&gt;-->
+        <!--            &lt;!&ndash;            &lt;!&ndash;            </tr>&ndash;&gt;&ndash;&gt;-->
+        <!--            &lt;!&ndash;            </thead>&ndash;&gt;-->
+        <!--            <tbody id="coffees"></tbody>-->
+        <!--        </table>-->
     </div>
 </div>
 
