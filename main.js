@@ -40,10 +40,8 @@ function updateCoffees(e) {
 var searchBarElement = document.getElementById("search-bar");
 searchBarElement.addEventListener("keyup", updateCoffees);
 
-// console.log(searchBarElement.value);
 
 
-// from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -62,11 +60,9 @@ var coffees = [
 ];
 
 var tbody = document.querySelector('#coffees');
-// var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
 tbody.innerHTML = renderCoffees(coffees);
 roastSelection.addEventListener('change', updateCoffees);
-// submitButton.addEventListener('click', updateCoffees);
 
 
